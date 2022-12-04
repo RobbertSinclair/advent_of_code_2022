@@ -11,7 +11,7 @@ def assignments_fully_contains(elves):
 
 def assignments_overlap(elves):
     assignment1, assignment2 = tuple([[int(e) for e in elf.split("-")] for elf in elves])
-    return check_assignments_overlap(assignment1, assignment2) and check_assignments_overlap(assignment2, assignment1)
+    return check_assignments_overlap(assignment1, assignment2)
 
 
 with open("./input.txt") as f:
